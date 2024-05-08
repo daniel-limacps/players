@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+}  
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+}
+
+.content{
+    width: 500px;
+    min-height: 560px;    
+    margin: 0px auto;
+    /*position: relative;*/
+}
+
+nav.navbar.navbar-default{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-top: 10px;
+}
+
+nav.navbar.navbar-default a {
+    color: white;
+}
+
+li p.navbar-text, a.navbar-brand {
+    color: white!important ;
+    font-weight: bolder;
+}
+
+title {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-top: 55px;
+    color: white;
+    border-radius: 5px;
+}
+
+title p { 
+    padding: 10px; 
+}
+
+footer.footer {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    margin-top: 55px;
+    color: white;
+    border-radius: 5px;
+}
+
+footer.footer p { 
+    padding: 10px; 
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+th{
+    font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+    background-color: #DCEBE6;
+}
+
+tr:hover:nth-child(1n + 2) {
+    background-color: #085F63;
+    color: #fff;
+}
+
+img.delete {
+   cursor: pointer;
+}
+
+img.update {
+   cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+ 
+input:not([type="checkbox"]){
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+ 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+ 
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+ 
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+ 
+select {
+    outline: none;
+}
+ 
+select{
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b2b2b2;
+ 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+ 
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+ 
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+ 
+button{
+    width: 100px!important;
+    cursor: pointer;  
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+ 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+ 
+    transition: all 0.2s linear;
+}
+ 
+button:hover{
+    background: #4ab3c6;
+}
+ 
+label{
+    color: #405c60;
+    position: relative;
+    margin-right: 20px;
+}
+
+::-webkit-input-placeholder  {
+    color: #bebcbc; 
+    font-style: italic;
+}
+ 
+input:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+}
+
+div.teams{
+    /*width: 50%;*/
+    margin: 0px 5px; 
+    display: flex;
+}
+
+div.team {
+    /*box-sizing: border-box;*/
+    display: inline-block;
+    border: 1px double #ebe84c;
+    border-radius: 10px;
+    min-width:40px;
+    padding: 2px;
+    /*width: 60%;*/
+}
+
+div.teams ul {
+    list-style: none;
+    margin: auto;
+}
+
+div.teams li {
+    color: #f8f4f4;
+    margin: 0 auto;
+    min-height: 10px;  
+    overflow: hidden;
+    padding: auto;
+    width:  324px;
+}
+div.teams li.player {
+    background: rgb(61, 157, 179);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.container {
+    margin: 0;
+}
