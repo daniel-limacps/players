@@ -257,7 +257,7 @@ class PlayerController extends Controller implements Interfaces\Player {
     public function addplayers(Array $players, Array &$goalkeepers, Array &$anothers) {
         $i = 0;
         foreach ($players AS $player) {
-            if($player->goalkeeper === 1) {
+            if((int)$player->goalkeeper === 1) {
                 $goalkeepers[] =  Array(
                     "nivel_{$player->nivel}" => $player->name
                 );

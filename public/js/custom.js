@@ -50,7 +50,7 @@ const absent = (t) => {
     /**
      * 
      */
-    postData("/absent", { id: id, value: value} ).then((data) => {        
+    postData("/players/absent", { id: id, value: value} ).then((data) => {        
         if(data === true && value === 1) {
             t.parentElement.parentElement.children.absent.innerHTML = 'Sim';
         } else {
@@ -91,7 +91,7 @@ const remove = (t) => {
     /**
      * 
      */
-    removeData("/remove", { id: id} ).then((data) => {       
+    removeData("/players/remove", { id: id} ).then((data) => {       
         if (confirm("Deseja remover esse Jogador!") === true) {
             if(data === true) {
                 t.parentElement.parentElement.remove();
