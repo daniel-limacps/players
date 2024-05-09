@@ -5,7 +5,7 @@
         <br /><!-- comment -->
         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
             <div class="flex items-center">
-                <div class="ml-4 text-lg leading-7 font-semibold"><a href="/player/addplayer" class="underline text-gray-900 dark:text-white">Adicionar jogador</a></div>
+                <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ asset('/player/addplayer') }}" class="underline text-gray-900 dark:text-white">Adicionar jogador</a></div>
             </div>
         </div>
         <br />
@@ -43,7 +43,7 @@
         
         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
             <div class="flex items-center">
-                <div class="ml-4 text-lg leading-7 font-semibold"><a href="/" class="underline text-gray-900 dark:text-white">Página inicial</a></div>
+                <div class="ml-4 text-lg leading-7 font-semibold"><a href="{{ asset('/') }}" class="underline text-gray-900 dark:text-white">Página inicial</a></div>
             </div>
         </div>
 @stop()

@@ -76,6 +76,16 @@ class PlayerController extends Controller implements Interfaces\Player {
      */
     public function store(Request $request) {
         $params = $request->all();
+        $validator = Validator::make($params, [
+            'name' => 'required',
+            'nivel' => 'required',
+        ], $this->messages());
+ 
+        if ($validator->fails()) {
+            return redirect('/player/addplayer')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
         $params['created_at'] = time();
         $player = new Players($params);
         $player->save();
@@ -105,6 +115,7 @@ class PlayerController extends Controller implements Interfaces\Player {
      */
     public function update(Request $request, $id) {
         $params = $request->all();
+
         $validator = Validator::make($params, [
             'name' => 'required',
             'nivel' => 'required',
@@ -328,8 +339,8 @@ class PlayerController extends Controller implements Interfaces\Player {
             'players.max' => 'Número máximo de ' . self::TOTALPLAYERS . ' jogadores por times',
             'players.min' => 'Número mínimo de ' . self::MINPLAYERS . ' jogadores por times',
             'players.numeric' => 'Digite somente números',
-            'players.name' => 'Digite o nome do jogador',
-            'players.nivel' => 'Digite o nível do jogador',
+            'name.required' => 'Digite o nome do jogador',
+            'nivel.required' => 'Digite o nível do jogador',
         ];
     }
 }
